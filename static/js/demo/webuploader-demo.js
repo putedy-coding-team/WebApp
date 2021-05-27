@@ -429,7 +429,7 @@ jQuery(function() {
         uploader.retry();
     } );
 
-    $info.on( 'click', '.ignore', function() {
+    $info.on( 'click', '.gitignore', function() {
         alert( 'todo' );
     } );
 
