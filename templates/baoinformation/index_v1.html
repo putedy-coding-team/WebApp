@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+
+    <meta name="keywords" content="WebTempMonitor">
+    <meta name="description" content="TempMonitor Web version">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">11</span>
+                        <h5>包号</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">271.33℃</h1>
+                        <div class="stat-percent font-bold text-success">5/10 12:45
+                        </div>
+                        <small>最高温</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>温度趋势</h5>
+                        <div class="ibox-tools">
+                            <span class="label label-primary">15:23 更新</span>
+                        </div>
+                    </div>
+                    <div class="ibox-content no-padding">
+                        <div class="flot-chart m-t-lg" style="height: 55px;">
+                            <div class="flot-chart-content" id="flot-chart1"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">11</span>
+                        <h5>包号</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">271.33℃</h1>
+                        <div class="stat-percent font-bold text-success">5/10 12:45
+                        </div>
+                        <small>最高温</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>温度趋势</h5>
+                        <div class="ibox-tools">
+                            <span class="label label-primary">2015.02 更新</span>
+                        </div>
+                    </div>
+                    <div class="ibox-content no-padding">
+                        <div class="flot-chart m-t-lg" style="height: 55px;">
+                            <div class="flot-chart-content" id="flot-chart1"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">11</span>
+                        <h5>包号</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">271.33℃</h1>
+                        <div class="stat-percent font-bold text-success">5/10 12:45
+                        </div>
+                        <small>最高温</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>温度趋势</h5>
+                        <div class="ibox-tools">
+                            <span class="label label-primary">15:23 更新</span>
+                        </div>
+                    </div>
+                    <div class="ibox-content no-padding">
+                        <div class="flot-chart m-t-lg" style="height: 55px;">
+                            <div class="flot-chart-content" id="flot-chart1"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">11</span>
+                        <h5>包号</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">271.33℃</h1>
+                        <div class="stat-percent font-bold text-success">5/10 12:45
+                        </div>
+                        <small>最高温</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>温度趋势</h5>
+                        <div class="ibox-tools">
+                            <span class="label label-primary">2015.02 更新</span>
+                        </div>
+                    </div>
+                    <div class="ibox-content no-padding">
+                        <div class="flot-chart m-t-lg" style="height: 55px;">
+                            <div class="flot-chart-content" id="flot-chart1"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <h5>温度预警</h5>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td class="no-borders">
+                                        2021-2-3 19:12 11#钢包测温结果高于预警值
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        2021-2-3 19:12 11#钢包测温结果高于预警值
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-navy"></i>
+                                    </td>
+                                    <td>
+                                        2021-2-3 19:12 11#钢包测温结果高于预警值
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <h5>硬件状态</h5>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td class="no-borders">
+                                        摄像头：正常
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        开发板：正常
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        PLC：正常
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <h5>维护信息</h5>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td class="no-borders">
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td class="no-borders">
+                                        示例 01
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        示例 02
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle text-danger"></i>
+                                    </td>
+                                    <td>
+                                        示例 03
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="jumbotron">
+                <h1>其他信息预留</h1>
+                <p>预留给其他需要放在首页的信息位置，根据现场需求修改</p>
+                <div class="alert alert-warning">
+                    <ol>
+                        <li>创建一个带有 class .jumbotron. 的容器</li>
+                        <li>除了更大的 &lt;h1&gt;，字体粗细 font-weight 被减为 200px。</li>
+                    </ol>
+                </div>
+
+
+                <p><a role="button" class="btn btn-primary btn-lg">了解更多</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins/layer/layer.min.js' %}"></script>
+
+    <!-- 自定义js -->
+    <script src="{% static 'js/content.js' %}"></script>
+
+    <!-- Flot -->
+    <script src="{% static 'js/plugins/flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'js/plugins/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'js/plugins/flot/jquery.flot.pie.js' %}"></script>
+
+    <!-- 自定义js -->
+    <script>
+       $(document).ready(function () {
+        var d1 = [
+            [1262304000000, 6],
+            [1264982400000, 3057],
+            [1267401600000, 20434],
+            [1270080000000, 31982],
+            [1272672000000, 26602],
+            [1275350400000, 27826],
+            [1277942400000, 24302],
+            [1280620800000, 24237],
+            [1283299200000, 21004],
+            [1285891200000, 12144],
+            [1288569600000, 10577],
+            [1291161600000, 10295]
+        ];
+        var d2 = [
+            [1262304000000, 5],
+            [1264982400000, 200],
+            [1267401600000, 1605],
+            [1270080000000, 6129],
+            [1272672000000, 11643],
+            [1275350400000, 19055],
+            [1277942400000, 30062],
+            [1280620800000, 39197],
+            [1283299200000, 37000],
+            [1285891200000, 27000],
+            [1288569600000, 21000],
+            [1291161600000, 17000]
+        ];
+        var data1 = [{
+            label: "数据1",
+            data: d1,
+            color: "#17a084"
+        }, {
+            label: "数据2",
+            data: d2,
+            color: "#127e68"
+        }];
+        $.plot($("#flot-chart1"), data1, {
+            xaxis: {
+                tickDecimals: 0
+            },
+            series: {
+                lines: {
+                    show: true,
+                    fill: true,
+                    fillColor: {
+                        colors: [{
+                            opacity: 1
+                        }, {
+                            opacity: 1
+                        }]
+                    },
+                },
+                points: {
+                    width: 0.1,
+                    show: false
+                },
+            },
+            grid: {
+                show: false,
+                borderWidth: 0
+            },
+            legend: {
+                show: false,
+            }
+        });
+
+    });
+    </script>
+
+</body>
+</html>

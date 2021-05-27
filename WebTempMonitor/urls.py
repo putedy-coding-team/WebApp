@@ -18,8 +18,10 @@ from django.urls import path
 from baoinformation import views
 
 urlpatterns = [
+    path('', views.index),
     path('admin/', admin.site.urls),
     path('index/', views.index),
+    path('index_v1/', views.index_v1),
     path('history/', views.history),
     path('information/', views.information),
     path('maintain/', views.maintain),
