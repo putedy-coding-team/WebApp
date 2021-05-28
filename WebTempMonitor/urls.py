@@ -23,6 +23,7 @@ urlpatterns = [
     path('index/', views.index),
     path('index_v1/', views.index_v1),
     path('history/', views.history),
+    path('history/api/', views.history_api),
     path('information/', views.information),
     path('maintain/', views.maintain),
     path('hardware/', views.hardware),
